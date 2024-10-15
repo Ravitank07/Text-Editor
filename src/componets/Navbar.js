@@ -13,9 +13,7 @@ export default function Navbar(pro) {
                     <li className="nav-item active">
                         <Link className={`nav-link text-${pro.mode==='light'?'dark':'light'}`} to="/">Home</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className={`nav-link text-${pro.mode==='light'?'dark':'light'}`} to="/about">About</Link>
-                    </li>
+                  
                 </ul>
                 <div className={`form-check form-switch text-${pro.mode==='light'?'dark':'light'}`}>
                     <input className="form-check-input" onClick={pro.toggleMode} type="checkbox" id="flexSwitchCheckDefault"/>

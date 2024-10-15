@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import './App.css';
-import About from './componets/About';
 import Navbar from './componets/Navbar';
 import TextForm from './componets/TextForm';
 import {
@@ -28,7 +27,6 @@ function App() {
     <Router>
       <Navbar mode={mode} toggleMode={toggleMode}/>
       <Routes>
-            <Route exact path="/about" element={<About/>}></Route>
             <Route exact path="/" element={<TextForm mode={mode}/>}>
             </Route>
           </Routes>
